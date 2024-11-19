@@ -26,7 +26,7 @@ monikerRange: "=azuresqldb-current"
 Returns information about backups of a database in an [!INCLUDE [ssazure-sqldb](../../includes/ssazure-sqldb.md)] server.
 
 > [!NOTE]  
-> The `sys.dm_database_backups` DMV is currently in preview and is available for all Azure SQL Database service tiers except Hyperscale tier. Running this DMV in the Hyperscale tier returns unexpected results, because the Hyperscale tier is snapshot-based.
+> The `sys.dm_database_backups` DMV is currently in preview and is available for all Azure SQL Database service tiers except the Hyperscale tier. Since the Hyperscale service tier relies on snapshots for backups, running this DMV in the Hyperscale service tier returns unexpected results.
 
 | Column name | Data type | Description |
 | --- | --- | --- |
